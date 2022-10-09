@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "r_todolist"
+version = "0.1.0"
+description = ""
+authors = ["reiichii <20413226+reiichii@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "r_todolist"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = {extras = ["all"], version = "^0.6.1"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+todo = "r_todolist.main:app"
